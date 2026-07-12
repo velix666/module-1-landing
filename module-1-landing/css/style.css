@@ -1,11 +1,13 @@
-body {}
+body {
+    margin: 0;
+}
 
 .header {
-    
     position: sticky;
     width: 100%;
     z-index: 10;
     top: 0;
+    background-color: #2C1A0E;
 
 }
 
@@ -13,6 +15,11 @@ body {}
     display: flex;
     justify-content: space-between;
     align-items: center;
+   padding: 20px;
+}
+.container a {
+    color: #C8860A;
+    text-decoration: none;
 }
 
 .hero {
@@ -25,7 +32,8 @@ body {}
     background-repeat: no-repeat;
     z-index: 0;
     position: relative;
-    margin: 0
+    justify-content: center;
+    align-items: center;
 }
 
 .hero_overlay {
@@ -37,4 +45,53 @@ body {}
     left: 0;
     top: 0;
     background-color: rgba(44, 26, 14, 0.6);
+}
+
+.hero_content {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.quote {
+ color:#FFFFFF;
+ z-index: 2;
+ font-family:serif;
+}
+
+.nomer {
+    color:#C8860A;
+    z-index: 3;
+}
+
+.history {
+    color: rgba(250, 246, 241, 0.7);
+    z-index: 4;
+}
+
+.hero_buttons a {
+  
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #C8860A;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+.hero_buttons a:last-child {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+.hero_buttons {
+    z-index: 5;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: flex-start;
 }
