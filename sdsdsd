@@ -24,3 +24,71 @@ Photo by <a href="https://unsplash.com/@waleij?utm_source=unsplash&utm_medium=re
 Photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a> on <a href="https://unsplash.com/photos/person-holding-clear-shot-glass-8d8v3YSgIBo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
       
+
+
+
+.menu_section {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px;
+    align-items: center;
+}
+
+.menu_cards {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.menu_card {
+    width: 200px;
+    gap: 40px;
+}
+
+.menu_title {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.menu_title h3 {
+    color: #C8860A;
+    font-size: 14px;
+    font-family: 'Inter';
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.menu_title h1 {
+    font-size: 48px;
+    color: #2C1A0E;
+    font-family: 'Playfair Display';
+    margin: 0;
+}
+
+.menu_header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-end;
+
+}
+
+.menu_description {
+    display: flex;
+    width: 280px;
+    align-self: flex-end;
+    padding-bottom: 10px;
+
+}
+
+.description {}
