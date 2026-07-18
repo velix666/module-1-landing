@@ -165,7 +165,7 @@ body {
 .advantages {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
     max-width: 1200px;
     width: 100%;
 }
@@ -175,14 +175,40 @@ body {
     flex-direction: column;
     max-width: 1200px;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 .details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 20px;
+    padding: 120px 40px;
+    background-color: #FAF6F1;
+}
+
+.puns p {
+    color: #C8860A;
+    font-size: 14px;
+    margin-bottom: -20px;
+    font-family: 'Inter';
+
+}
+
+.puns h1 {
+    color: #2C1A0E;
+    font-size: 48px;
+    width: 450px;
+}
+
+.advantages_one h3,
+.advantages_two h3,
+.advantages_three h3,
+.advantages_fourth h3 {
+    font-size: 18px;
+    color: #2C1A0E;
+    font-family: 'Playfair Display';
+
 }
 
 .advantages_one,
@@ -191,14 +217,78 @@ body {
 .advantages_fourth {
     flex: 1;
     min-width: 200px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 18px;
+    text-align: start;
+    border: 1px solid #2c1a0e1f;
 }
 
-.puns p {
+.advantages_one p,
+.advantages_two p,
+.advantages_three p,
+.advantages_fourth p {
+    font-size: 14px;
+    font-family: 'Inter';
+    color: #7A5C44;
+
+}
+
+.icon-wrapper {
     color: #C8860A;
-    font-size: 16px;
+    background-color: #F0E8DF;
+    padding: 15px;
+    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_section {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px;
+    align-items: center;
+}
+
+.menu_cards {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    align-self: center;
 
 }
 
-.puns p {
- margin-bottom: -20px;
+.menu_card {
+    width: 200px;
+    gap: 40px;
+}
+
+.menu_title {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_title h3 {
+    color: #C8860A;
+    font-size: 14px;
+    font-family: 'Inter';
+}
+
+.menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 60px;
+
+}
+
+.menu_description {
+    display: flex;
+    align-items: end;
 }
