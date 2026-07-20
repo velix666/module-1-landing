@@ -25,15 +25,14 @@
             <a href="#order" class="btn">Заказать → </a>
         </div>
     </header>
-    <section class="hero"> <!-- фон -->
-        <div class="hero_overlay"></div> <!--затемнение фона-->
+
+    <section class="hero">
+        <div class="hero_overlay"></div>
         <div class="hero_content">
             <p class="nomer">SPECIALTY COFFEE · EST. 2016</p>
             <h1 class="quote">Кофе, ради которого стоит просыпаться.</h1>
             <p class="history">Моносорта, обжаренные в нашей кофейне и приготовленные сертифицированными бариста,
-                которые вкладывают
-                душу в
-                каждую чашку.</p>
+                которые вкладывают душу в каждую чашку.</p>
             <div class="hero_buttons">
                 <a href="#menu">Смотреть меню → </a>
                 <a href="#about">Наша история</a>
@@ -54,6 +53,7 @@
             </div>
         </div>
     </section>
+
     <section class="details">
         <div class="puns">
             <h3>Почему именно Aroma?</h3>
@@ -94,60 +94,143 @@
             </div>
         </div>
     </section>
+
     <section class="menu_section">
         <div class="menu_header">
             <div class="menu_title">
-             <h3>Наше Меню</h3>
-             <h1>Идеально для любого настроения.</h1>
+                <h3>Наше Меню</h3>
+                <h1>Идеально для любого настроения.</h1>
             </div>
             <div class="menu_description">
                 <p>Каждый рецепт создан в нашей кофейне. Сезонные напитки обновляются вместе с урожаем кофе.</p>
             </div>
         </div>
+
         <div class="menu_cards">
             <div class="menu_card">
-                <span class="tag tag-signature">Фирменный</span>
-                <h3>Эспрессо моносорт</h3>
-                <p class="price">450₽</p>
-                <p class="description">Насыщенный шот из эфиопской Иргачефф с яркими нотами черники и жасмина.</p>
-                <button class="add-to-order">В корзину</button>
+                <div class="card_image">
+                    <img src="images/jonas.jpg" alt="Эспрессо моносорт">
+                    <span class="tag">Фирменный</span>
+                </div>
+                <div class="card_text">
+                    <h3>Эспрессо моносорт</h3>
+                    <p class="price">450₽</p>
+                    <p class="description">Насыщенный шот из эфиопской Иргачефф с яркими нотами черники и жасмина.</p>
+                    <button class="add-to-order">В корзину</button>
+                </div>
             </div>
+
             <div class="menu_card">
-                <span class="tag tag-popular">Популярное</span>
-                <h3>Капучино на овсяном молоке</h3>
-                <p class="price">600₽</p>
-                <p class="description"> Бархатистое овсяное молоко с насыщенным двойным эспрессо и нежной микропеной, нарисованной вручную.
+                <div class="card_image">
+                    <img src="images/unsplash.jpg" alt="Капучино на овсяном молоке">
+                    <span class="tag">Популярное</span>
+                </div>
+                <div class="card_text">
+                    <h3>Капучино на овсяном молоке</h3>
+                    <p class="price">600₽</p>
+                    <p class="description">Бархатистое овсяное молоко с насыщенным двойным эспрессо и нежной микропеной,
+                        нарисованной вручную.</p>
+                    <button class="add-to-order">В корзину</button>
+                </div>
+            </div>
+
+            <div class="menu_card">
+                <div class="card_image">
+                    <img src="images/haydn-golden.jpg" alt="Латте">
+                    <span class="tag">Сезонное</span>
+                </div>
+                <div class="card_text">
+                    <h3>Сезонный Латте</h3>
+                    <p class="price">650₽</p>
+                    <p class="description">Наш авторский латте, меняющийся каждый сезон. Сейчас это кардамон и мёд с
+                        фирменным сиропом и цельным молоком.</p>
+                    <button class="add-to-order">В корзину</button>
+                </div>
+            </div>
+
+            <div class="menu_card">
+                <div class="card_image">
+                    <img src="images/alexander-ross.jpg" alt="Колд-брю">
+                    <span class="tag">Холодное</span>
+                </div>
+                <div class="card_text">
+                    <h3>Колд-брю «Резерв»</h3>
+                    <p class="price">550₽</p>
+                    <p class="description">18-часовое медленное заваривание нашей гватемальской смеси. Шелковистый, с
+                        низкой кислотностью и естественной сладостью, подается со льдом.</p>
+                    <button class="add-to-order">В корзину</button>
+                </div>
+            </div>
+
+            <div class="menu_card">
+                <div class="card_image">
+                    <img src="images/emma-waleij.jpg" alt="Пуровер">
+                    <span class="tag">Альтернатива</span>
+                </div>
+                <div class="card_text">
+                    <h3>Пуровер</h3>
+                    <p class="price">700₽</p>
+                    <p class="description">Точное заваривание в воронке V60 водой при 93°C. Свежий помол раскрывает вкус
+                        зерна максимально чисто и прозрачно.</p>
+                    <button class="add-to-order">В корзину</button>
+                </div>
+            </div>
+
+            <div class="menu_card">
+                <div class="card_image">
+                    <img src="images/nathan-dumlao.jpg" alt="Флэт Уайт">
+                    <span class="tag">Классика</span>
+                </div>
+                <div class="card_text">
+                    <h3>Флэт Уайт</h3>
+                    <p class="price">550₽</p>
+                    <p class="description">Двойной ристретто с шелковистым вспененным молоком — больше кофе, меньше
+                        молока, максимум вкуса.</p>
+                    <button class="add-to-order">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about_us">
+        <div class="coffee_shop_image">
+            <img src="images/aurela.jpg" alt="Кофейня">
+        </div>
+        <div class="about_section">
+            <div class="our_store">
+                <h3>Наша история</h3>
+                <h1>Рождено любовью к кофе.</h1>
+                <p>Aroma началась с небольшой тележки площадью 200 квадратных футов на улице SE Morrison в 2016 году.
+                    Основатель Кай Адейеми вернулся из года, проведённого на кофейных фермах Эфиопии, с одной
+                    убеждённостью:
+                    отличному кофе не нужны украшения — ему нужна честность.
+                    Сегодня мы работаем в нашем флагманском пространстве в районе Pearl District и обжариваем всё зерно
+                    в
+                    собственном цеху на 12-килограммовом ростере Giesen. Каждая закупка зерна по-прежнему осуществляется
+                    лично, наши отношения с фермерами длятся годами, а каждый бариста проходит 200 часов
+                    структурированного
+                    обучения, прежде чем впервые подойдёт к профессиональной кофемашине.
+                    Мы верим, что кофе в лучшем своём проявлении — это сельское хозяйство, и люди, которые выращивают
+                    эти
+                    зёрна, заслуживают не меньше признания, чем те, кто готовит из них напиток.
                 </p>
-                <button class="add-to-order">В корзину</button>
             </div>
-            <div class="menu_card">
-                <span class="tag tag-seasonal">Сезонное</span>
-                <h3>Сезонный Латте</h3>
-                <p class="price">650</p>
-                <p class="description"> Наш авторский латте, меняющийся каждый сезон. Сейчас это кардамон и мёд с фирменным сиропом и цельным молоком.</p>
-                <button class="add-to-order">В корзину</button>
+            <div class="our_features">
+                <div class="features">
+                    <p>12</p>
+                    <p>Партнёров-фермеров</p>
+                </div>
+                <div class="features">
+                    <p>3</p>
+                    <p>Степени обжарки</p>
+                </div>
+                <div class="features">
+                    <p>3</p>
+                    <p>Прямые закупки</p>
+                </div>
             </div>
-            <div class="menu_card">
-                <span class="tag tag-cold">Холодное</span>
-                <h3>Колд-брю «Резерв»</h3>
-                <p class="price">550</p>
-                <p class="description">18-часовое медленное заваривание нашей гватемальской смеси. Шелковистый, с низкой кислотностью и естественной сладостью, подается со льдом.</p>
-                <button class="add-to-order">В корзину</button>
-            </div>
-            <div class="menu_card">
-                <span class="tag tag-alternative">Альтернатива</span>
-                <h3>Пуровер</h3>
-                <p class="price">700</p>
-                <p class="description">Точное заваривание в воронке V60 водой при 93°C. Свежий помол раскрывает вкус зерна максимально чисто и прозрачно.</p>
-                <button class="add-to-order">В корзину</button>
-            </div>
-            <div class="menu_card">
-                <span class="tag tag-classic">Классика</span>
-                <h3>Флэт Уайт</h3>
-                <p class="price">550</p>
-                <p class="description">Двойной ристретто с шелковистым вспененным молоком — больше кофе, меньше молока, максимум вкуса.</p>
-                <button class="add-to-order">В корзину</button>
-            </div>
+        </div>
+        <div class="button_about">
+            <a href="#about">Ждём вас</a>
         </div>
     </section>
 </body>

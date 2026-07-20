@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 body {
     margin: 0;
@@ -12,7 +10,6 @@ body {
     z-index: 10;
     top: 0;
     background-color: #2C1A0E;
-
 }
 
 .container {
@@ -55,7 +52,6 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    height: 100%;
     left: 0;
     top: 0;
     background-color: rgba(44, 26, 14, 0.6);
@@ -82,7 +78,6 @@ body {
 .quote {
     color: #FFFFFF;
     z-index: 2;
-    font-family: serif;
     font-size: 72px;
     font-family: 'Cormorant', serif;
 }
@@ -90,7 +85,6 @@ body {
 .nomer {
     color: #C8860A;
     z-index: 3;
-    font-size: px;
     display: flex;
     align-self: flex-start;
     width: 100%;
@@ -105,10 +99,8 @@ body {
     z-index: 4;
     font-size: 18px;
     margin-bottom: 50px;
-    font-size: 18px;
     margin-top: -20px;
     font-family: 'Inter', serif;
-
 }
 
 .hero_buttons a {
@@ -130,12 +122,10 @@ body {
 
 .hero_buttons {
     z-index: 5;
-    justify-content: flex-center;
+    justify-content: center;
     display: flex;
     gap: 20px;
-    align-self: flex-center;
     margin-top: 10px;
-
 }
 
 .hero_stats {
@@ -208,7 +198,6 @@ body {
     font-size: 18px;
     color: #2C1A0E;
     font-family: 'Playfair Display';
-
 }
 
 .advantages_one,
@@ -231,7 +220,6 @@ body {
     font-size: 14px;
     font-family: 'Inter';
     color: #7A5C44;
-
 }
 
 .icon-wrapper {
@@ -296,45 +284,46 @@ body {
 }
 
 .menu_cards {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
     width: 100%;
-    align-self: center;
     gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex: 1;
-
+    justify-items: center;
 }
 
 .menu_card {
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
-    border: 90px;
-    padding: 10px 10px;
-    flex: 1 1 350px;
-    min-width: 350px;
-    max-width: 400px; 
+    border: 1px solid #2c1a0e1f;
+    padding: 0px;
+    width: 100%; 
     border-radius: 30px;
+    overflow: hidden; /
 }
 
 .menu_card h3 {
-    font-family: '	Playfair Display';
+    font-family: 'Playfair Display';
     font-size: 18px;
     color: #2C1A0E;
+    margin: 0 0 8px 0;
 }
 
 .price {
     font-size: 18px;
     font-family: 'Inter';
     color: #C8860A;
+    margin: 0 0 10px 0;
 }
 
 .description {
     font-family: 'Inter';
     font-size: 14px;
     color: #7A5C44;
+    width: 100%;     
+    flex: 1;           
+    margin: 0 0 20px 0;
 }
 
 .add-to-order {
@@ -342,11 +331,99 @@ body {
     font-family: 'Inter';
     color: #2C1A0E;
     background: none;
-    border: none;
     border: 1px solid #2c1a0e1f;
-    width: 90%;
+    width: 100%;
     border-radius: 50px;
     padding: 10px 10px;
     align-self: center;
-    margin-top: auto
+    cursor: pointer;
+}
+
+.card_image {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;        
+    padding: 30px;
+}
+
+.tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: 'Inter';
+    color: #FFFFFF;
+    background-color: #C8860A;
+}
+
+@media (max-width: 900px) {
+    .menu_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu_cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.coffee_shop_image {
+   overflow: hidden;
+   display: flex;
+   width: auto;
+   padding: 0px;
+   align-items: center;
+}
+
+.coffee_shop_image img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.our_store {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.our_features {
+    display: flex;
+    text-align: center;
+
+}
+
+.about_section {
+    display: flex;
+    flex-direction: column;
+
 }
