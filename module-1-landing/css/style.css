@@ -149,7 +149,8 @@ body {
 
 .stat_text {
     font-size: 14px;
-    font-family: 'Inter';
+    font-family: 'Inter', serif;
+    color: #F0E8DF;
 }
 
 .advantages {
@@ -298,9 +299,9 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #2c1a0e1f;
     padding: 0px;
-    width: 100%; 
+    width: 100%;
     border-radius: 30px;
-    overflow: hidden; /
+    overflow: hidden;/
 }
 
 .menu_card h3 {
@@ -321,8 +322,8 @@ body {
     font-family: 'Inter';
     font-size: 14px;
     color: #7A5C44;
-    width: 100%;     
-    flex: 1;           
+    width: 100%;
+    flex: 1;
     margin: 0 0 20px 0;
 }
 
@@ -357,7 +358,7 @@ body {
 .card_text {
     display: flex;
     flex-direction: column;
-    flex: 1;        
+    flex: 1;
     padding: 30px;
 }
 
@@ -386,44 +387,154 @@ body {
 }
 
 .coffee_shop_image {
-   overflow: hidden;
-   display: flex;
-   width: auto;
-   padding: 0px;
-   align-items: center;
+    overflow: hidden;
+    display: flex;
+    width: auto;
+    padding: 20px;
+    align-items: center;
 }
 
 .coffee_shop_image img {
-    width: 600px;
-    height: auto;
+    width: 500px;
+    height: 75vh;
     object-fit: cover;
     object-position: center;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .about_us {
+    width: 100%;
+    background-color: #FAF6F1;
+    padding: 120px 0;
+}
+
+
+.about_us .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    gap: 30px;
+    gap: 60px;
+    padding: 0 20px; 
+}
+
+.coffee_shop_image {
+    flex: 1; 
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.coffee_shop_image img {
     width: 100%;
-    margin: 0 auto;
+    height: 75vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    display: block;
+}
+
+.about_section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .our_store {
     display: flex;
     flex-direction: column;
-    width: 500px;
+}
+
+.our_store h3 {
+    color: #C8860A;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+}
+
+.our_store h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #2C1A0E;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.our_store p {
+    font-size: 16px;
+    color: #7A5C44;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6; 
 }
 
 .our_features {
     display: flex;
-    text-align: center;
-
+    gap: 40px;
+    margin-top: 30px;
 }
 
-.about_section {
-    display: flex;
-    flex-direction: column;
+.features p:first-child {
+    color: #2C1A0E;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-weight: 700;
+}
 
+.features p:last-child {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #7A5C44;
+    margin: 5px 0 0 0;
+}
+
+/* 6. Кнопка */
+.button_about {
+    display: flex;
+    margin-top: 40px;
+    background-color: #2C1A0E;
+    padding: 13px 30px; 
+    border-radius: 50px;
+    width: fit-content; 
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.button_about:hover {
+    background-color: #C8860A;
+}
+
+.button_about a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .about_us .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .coffee_shop_image {
+        max-width: 100%;
+    }
+
+    .coffee_shop_image img {
+        height: 50vh; 
+    }
+
+    .our_store h1 {
+        font-size: 36px;
+    }
+
+    .our_features {
+        flex-wrap: wrap; 
+    }
 }
