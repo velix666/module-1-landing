@@ -301,7 +301,7 @@ body {
     padding: 0px;
     width: 100%;
     border-radius: 30px;
-    overflow: hidden;/
+    overflow: hidden;
 }
 
 .menu_card h3 {
@@ -314,11 +314,11 @@ body {
 .price {
     font-size: 18px;
     font-family: 'Inter';
-    color: #C8860A; 
+    color: #C8860A;
     font-weight: 600;
     margin: 0;
-    padding: 0; 
-    
+    padding: 0;
+
 }
 
 .header_row {
@@ -384,7 +384,7 @@ body {
     font-size: 12px;
     font-family: 'Inter';
     color: #FFFFFF;
-    background-color:#2C1A0E;
+    background-color: #2C1A0E;
 }
 
 @media (max-width: 900px) {
@@ -506,7 +506,6 @@ body {
     margin: 5px 0 0 0;
 }
 
-/* 6. Кнопка */
 .button_about {
     display: flex;
     margin-top: 40px;
@@ -561,8 +560,8 @@ body {
     left: 400px;
     bottom: 0px;
     text-align: center;
-    
-    
+
+
 }
 
 .text_overlay h2 {
@@ -574,9 +573,117 @@ body {
 
 .text_overlay p {
     margin: 0px 0px 15px 0px;
-    font-family: 'Irent',sans-serif;
+    font-family: 'Irent', sans-serif;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
 }
 
+.gallery {
+    padding: 60px 120px;
+    background-color: #F0E8DF;
+}
+
+.text_gallery {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.text_gallery h3 {
+    color: #C8860A;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.text_gallery h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    color: #2C1A0E;
+}
+
+.section_gallery {
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    grid-template-rows: 220px 220px 160px;
+
+    gap: 10px;
+
+    grid-template-areas:
+        "main main main a    b    b"
+        "main main main c    d    d"
+        "main main main e    e    e";
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.photo img:hover {
+    transform: scale(1.4)
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.photo-main {
+    grid-area: main;
+}
+
+.photo-a {
+    grid-area: a;
+}
+
+.photo-b {
+    grid-area: b;
+}
+
+.photo-c {
+    grid-area: c;
+}
+
+.photo-d {
+    grid-area: d;
+}
+
+.photo-e {
+    grid-area: e;
+}
+
+/* Адаптив: на узких экранах — одна колонка */
+@media (max-width: 700px) {
+    .gallery {
+        padding: 40px 20px;
+    }
+
+    .section_gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "main main"
+            "a    b"
+            "c    d"
+            "e    f";
+    }
+
+    .photo img {
+        height: 160px;
+    }
+}
+
+.photo-e img {
+    object-position: center 70%;
+}
