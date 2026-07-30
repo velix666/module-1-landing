@@ -687,3 +687,147 @@ body {
 .photo-e img {
     object-position: center 70%;
 }
+
+.users_comments {
+    background-color: #2C1A0E;
+    padding: 120px;
+
+}
+
+.container_comments {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+}
+
+.review h2 {
+    color: #C8860A;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.review h1 {
+    color: #FAF6F1;
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+}
+
+.container_users {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+
+}
+
+.reviews_card {
+    max-width: 380px;
+    text-align: start;
+    flex: 1;
+    padding: 20px;
+    background-color: #3D2817;
+    border-radius: 30px;
+    border: 1px solid #4A3728;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews_star {
+    max-width: 100px;
+}
+
+.fa-star {
+    color: #C8860A;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-items: end;
+    margin-top: auto;
+
+}
+
+.name_user {
+    display: flex;
+    background-color: #593e1c;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: #C8860A;
+    font-weight: 600;
+}
+
+.reviews_card p {
+    color: rgba(250, 246, 241, 0.7);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.info_user {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+
+}
+
+.info_user h3 {
+    color: #FAF6F1;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.info_user p {
+    color: rgba(250, 246, 241, 0.4);
+    margin: 0px;
+}
+
+@media (max-width: 1024px) {
+    .container_users {
+        flex-wrap: wrap;         
+        justify-content: center;
+    }
+
+    .reviews_card {
+        flex: 0 1 calc(50% - 15px);   
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 700px) {
+    .container_users {
+        flex-direction: column;   
+        align-items: center;
+    }
+
+    .reviews_card {
+        max-width: 100%;
+        width: 100%;
+        flex: none;               
+    }
+}
