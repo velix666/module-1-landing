@@ -27,7 +27,7 @@ h2,
 .advantages_one h3,
 .advantages_two h3,
 .advantages_three h3,
-.advantages_fourth h3, {
+.advantages_fourth h3 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -148,7 +148,6 @@ a {
     display: none;
 }
 
-/* Бургер-меню (скрыт на десктопе) */
 .nav-toggle {
     display: none;
 }
@@ -223,7 +222,7 @@ a {
     }
 }
 
-/* ============ HERO ============ */
+/*HERO*/
 
 .hero {
     background-image: url('../images/hero-barista_1.jpeg');
@@ -1101,7 +1100,7 @@ a {
     }
 }
 
-/* ============ RELATIONS / CONTACT ============ */
+/* RELATIONS / CONTACT */
 
 .relations {
     background-color: #FAF6F1;
@@ -1305,7 +1304,7 @@ a {
     }
 }
 
-/* ============ FOOTER ============ */
+/* FOOTER */
 
 .footer {
     background-color: #2C1A0E;
